@@ -1,0 +1,27 @@
+lista = []
+lista2 = []
+is_running = True
+studenti = 0
+lanci = 0
+
+
+while is_running == True:
+    studenti += 1
+    lanci += 1
+    print("nome della persona", studenti,"? ")
+    x = input()
+    nomi = x
+    lista.append(nomi)
+    print("lancio della persona", studenti,"? ")
+    lanci= int(input())
+    lista2.append(lanci)
+    numxuscire = int(input("per uscire uscire scrivi -1  "))
+    if numxuscire == -1:
+        is_running = False
+    else:
+        pass
+    
+lista2.sort()
+lista2.reverse()
+
+print("il valore maggiore è", lista2[0])
