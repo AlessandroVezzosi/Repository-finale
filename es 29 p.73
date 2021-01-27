@@ -1,0 +1,41 @@
+Lnomi = []
+Lmax = []
+Lmin = []
+Lesc = []
+is_running = True
+città = 0
+Tmax = 0
+Tmin = 0
+Tesc = 0
+print("quant'è il valore dell'escursione termica da prefissare?")
+Vpref = int(input())
+
+while is_running == True:
+    città += 1
+    Tmax += 1
+    Tmin += 1
+    Tesc += 0
+    print("nome della città", città,"? ")
+    nomi = input()
+    Lnomi.append(nomi)
+    print("Ttemperatura massima registrata quest'oggi a", nomi,"? ")
+    temp1 = int(input())
+    Lmax.append(temp1)
+    print("Ttemperatura minima registrata quest'oggi a", nomi,"? ")
+    temp2 = int(input())
+    Lmin.append(temp2)
+    esctermica = temp1 - temp2
+    if esctermica > Vpref:
+         Lesc.append(esctermica)
+    else:
+         pass
+    numxuscire = int(input("se hai terminato l'elenco di città puoi smettere premento 0, se invece vuoi continuare premi un tasto qualsiasi "))
+    if numxuscire == 0:
+        is_running = False
+    else:
+        pass
+    
+
+
+Lesc.reverse()
+print("le escursioni termiche maggiori del valore prefissato sono le seguenti:", Lesc[:])
