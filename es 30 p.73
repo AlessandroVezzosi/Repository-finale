@@ -1,0 +1,8 @@
+lung = int (input ("dimmi il numero binario"))
+som = 0
+for n in range (lung):
+    cifra = int (input ("dimmi le cifre partendo da destra"))
+    val = (cifra*2**n)
+    somma += val
+
+print (somma)
