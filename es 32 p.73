@@ -1,0 +1,11 @@
+numA = int(input("dimmi il valore a"))
+numB = int(input("dimmi il valore b"))
+
+if numA == 0 and numB == 0 :
+    print("l'equazione di primo grado è indeterminata")
+elif numA != 0 and numB == 0:
+    print("la soluzione dell'equazione di primo grado è x=0")
+elif numA == 0 and numB != 0:
+    print("l'equazione di primo grado è impossibile")
+elif numA != 0 and numB != 0:
+    print("la soluzione dell'equazione di primo grado è x=-b/a")
