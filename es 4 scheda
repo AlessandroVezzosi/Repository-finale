@@ -1,0 +1,17 @@
+Lquad = int(input("dimmi il lato del quadrato di cui vuoi trovare l'area"))
+Areaquad = Lquad**2
+print("questa è l'area del quadrato:", Areaquad)
+
+Hret = int(input("dimmi l'altezza del rettangolo di cui vuoi trovare l'area"))
+Bret = int(input("dimmi la base del rettangolo di cui vuoi calcolare l'area"))
+Arearet = Hret * Bret
+print("questa è l'area del rettangolo:", Arearet)
+
+Htri = int(input("dimmi l'altezza del triangolo di cui vuoi trovare l'area"))
+Btri = int(input("dimmi la base del triangolo di cui vuoi calcolare l'area"))
+Areatri = (Htri * Btri) / 2
+print("questa è l'area del triangolo:", Areatri)
+
+Rcer = int(input("dimmi il raggio del cerchio di cui vuoi trovare l'area"))
+Areacer = (Rcer**2) * 3.14
+print("questa è l'area del cerchio:", Areacer)
