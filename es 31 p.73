@@ -1,0 +1,17 @@
+Nbin = []
+num = int (input ("dimmi un numero decimale"))
+while True:
+
+    quoz = int (num/2)
+    resto = num % 2
+    if resto == 1:
+        Nbin.append (1)
+    else:
+        Nbin.append (0)
+    num = quoz
+    
+    if quoz == 0:
+        break
+
+Nbin.reverse ()
+print (Nbin)
