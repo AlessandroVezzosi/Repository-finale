@@ -1,0 +1,25 @@
+lista = []
+is_running = True
+pers = 0
+ripet = 0
+somma = 0
+while is_running == True:
+    pers += 1
+    ripet += 1
+    print("Stipendio della persona", pers,"? ")
+    stipendi = int(input())
+    lista.append(stipendi)
+
+    if ripet == 3:
+        numuscita = int(input("per uscire uscire scrivi -1  "))
+        ripet = 0
+        if numuscita == -1:
+            is_running = False
+        else:
+            pass
+for i in lista:
+    somma += i
+num = len(lista)
+print(lista)
+mediastipendipersone = somma/num
+print(mediastipendipersone)
