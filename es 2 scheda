@@ -1,0 +1,14 @@
+lista1 = []
+lista2 = []
+is_running = True
+while is_running == True:
+    parola1 = input("Scrivi delle parole che vanno aggiunte alla lista, premi 1 se vuoi smettere di elencare parole")
+    if parola1 == "1":
+        is_running = False
+    else:
+        lista1.append(parola1)
+narg = len(lista1)
+for num in range(narg):
+    num2 = len(lista1[num])
+    lista2.append(num2)
+print(lista2)
