@@ -1,0 +1,23 @@
+diz = {}
+def settimana_ita_eng():
+    for j in range(7):
+        print("giorno ", (j+1), "in italiano")
+        dati = input()
+        print("giorno", (j+1), "in inglese")
+        dati2 = input()
+        diz[dati] = dati2
+    print("ecco la settimana tradotta dall'italiano all'inglese:", diz)
+
+
+new_diz = {}
+def settimana_eng_ita(diz):
+    for giorno in diz:
+        new_diz[diz[giorno]] = giorno
+    print("ecco la settimana tradotta dall'inglese all'italiano:", new_diz)
+
+def main():
+    print("adesso dovrai dirci i giorni della settimana in italiano e inglese e creerò un dizionario")
+    settimana_ita_eng()
+    settimana_eng_ita(diz)
+
+main()
