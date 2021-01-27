@@ -1,0 +1,21 @@
+nazioni = ["Italia", "Francia", "Germania", "Spagna", "Inghilterra", "Grecia", "Turchia", "Portogallo"]
+capitali = ["Roma", "Parigi", "Berlino", "Madrid", "Londra", "Atene", "Ankara", "Lisbona"]
+print("adesso potrai inserire il nome di uno stato tra i seguenti: Italia, Francia, Germania, Spagna, Inghilterra, Grecia, Turchia e Portogallo e ne conoscerai la capitale")
+
+while True:
+    scelta = input("inserisci qui la nazione desiderata:").capitalize()
+    numero = nazioni.index(scelta)
+    if scelta in nazioni:
+        print("eccoti la capitale di", scelta, ":", capitali[numero])
+        scelta2 = int(input("vuoi saperne un altra?premi 0 per inserirne un altra e 1 per uscire"))
+        if scelta2 == 1:
+            break
+        elif scelta2 == 0:
+            print("adesso dovrai inserirne un altra")
+        else:
+            print("hai inserito il numero sbagliato")
+            break
+    elif scelta not in nazioni:
+        print("la nazione che hai scelto non è tra quelle selezionabili, inseriscila nuovamente")
+    else:
+        pass
