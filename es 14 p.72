@@ -1,0 +1,9 @@
+numA = int(input("dimmi il numero a"))
+numB = int(input("dimmi il numero b"))
+prod = numA * numB
+if prod > 10 :
+    print(numA - numB)
+elif prod < 10:
+    print( numA + numB)
+else :
+    print( numA + numB)
