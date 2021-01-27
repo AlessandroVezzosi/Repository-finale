@@ -1,0 +1,22 @@
+lista = []
+is_running = True
+numgior = 0
+ripet = 0
+somma = 0
+while is_running == True:
+    numgior += 1
+    ripet += 1
+    print("Quanti veicoli sono entrati quel giorno", numgior,"? ")
+    veic = int(input())
+    lista.append(veic)
+
+    if ripet == 3:
+        numuscita = int(input("se vuoi uscire scrivi 1 :"))
+        ripet = 0
+        if numuscita == 1:
+            is_running = False
+        else:
+            pass
+for i in lista:
+    somma += i
+print("In", numgior,"giorni, sono passati", somma, "veicoli")
