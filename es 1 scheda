@@ -1,0 +1,5 @@
+parola = input("inserisci una parola")
+if parola == parola[::-1]:
+    print("questa parola è palindroma")
+elif parola != parola[::-1]:
+    print("questa parola non è palindroma")
