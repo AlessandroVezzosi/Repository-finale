@@ -1,0 +1,23 @@
+nazioni = ["Italia", "Francia", "Germania", "Spagna", "Inghilterra", "Grecia", "Turchia", "Portogallo"]
+capitali = ["Roma", "Parigi", "Berlino", "Madrid", "Londra", "Atene", "Ankara", "Lisbona"]
+diz = {}
+numero = len(nazioni)
+for num in range(0, numero):
+    diz[nazioni[num]] = capitali[num]
+print("adesso potrai inserire il nome di uno stato tra i seguenti: Italia, Francia, Germania, Spagna, Inghilterra, Grecia, Turchia e Portogallo e ne conoscerai la capitale")
+while True:
+    scelta = input("inserisci qui la nazione desiderata:").capitalize()
+    if scelta in diz.keys():
+        print("ecco qua la capitale:", diz[scelta])
+        scelta2 = int(input("vuoi saperne un altra?premi 0 per inserirne un altra e 1 per uscire"))
+        if scelta2 == 1:
+            break
+        elif scelta2 == 0:
+            print("adesso dovrai inserirne un altra")
+        else:
+            print("hai inserito il numero sbagliato")
+            break
+    elif scelta not in diz.keys():
+        print("la nazione che hai scelto non è tra quelle selezionabili, inseriscila nuovamente")
+    else:
+        pass
