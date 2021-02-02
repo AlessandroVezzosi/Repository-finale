@@ -1,0 +1,15 @@
+nomi_pazienti = []
+while True:
+    print("Avanti il prossimo")
+    nome = input("buongiorno, prima di mettersi in coda mi dica il suo nome, grazie").capitalize()
+    nomi_pazienti.append(nome)
+    fila = input("Mi può dire se lei è l'ultimo in attesa di registrarsi? risponda con Sì o No").capitalize()
+    if fila == "Sì" or fila == "Si" :
+        print("ok grazie e attenda prego")
+        break
+    elif fila =="No" :
+        print("perfetto, si accomodi prego")
+    else:
+        pass
+
+print("Abbiamo terminato le registrazioni, a sottoporsi all'esame adesso sarà il/la paziente", nomi_pazienti.pop(0), ")
