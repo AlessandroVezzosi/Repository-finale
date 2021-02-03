@@ -1,3 +1,8 @@
+#Costruisci un dizionario partendo da quello precedente invertendo il ruolo di chiave e di valore. Usa il nuovo dizionario per trovare il nome della nazione data la capitale.
+#(nei 2 es precedenti dovevamo creare prima con delle liste poi con un dizionario un programma che inserita una nazione avrebbe dato la capitale come output)
+
+
+
 nazioni = ["Italia", "Francia", "Germania", "Spagna", "Inghilterra", "Grecia", "Turchia", "Portogallo"]
 capitali = ["Roma", "Parigi", "Berlino", "Madrid", "Londra", "Atene", "Ankara", "Lisbona"]
 diz = {}
@@ -5,7 +10,7 @@ numero = len(nazioni)
 for num in range(0, numero):
     diz[nazioni[num]] = capitali[num]
 diz2 = dict(zip(diz.values(), diz.keys()))
-print("adesso potrai inserire il nome di una capitaòe tra le seguenti: Roma, Parigi, Berlino, Madrid, Londra, Atene, Ankara, Lisbona  e ne conoscerai la nazione") 
+print("adesso potrai inserire il nome di una capitale tra le seguenti: Roma, Parigi, Berlino, Madrid, Londra, Atene, Ankara, Lisbona  e ne conoscerai la nazione") 
 while True:
     scelta = input("inserisci qui la capitale desiderata:").capitalize()
     if scelta in diz2.keys():
