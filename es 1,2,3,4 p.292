@@ -1,3 +1,9 @@
+#es1 = Crea una classe Atleta per rappresentare le informazioni su un giocatore. La classe deve contenere un attributo booleano chiamato visitaMedica.
+#es2 = Aggiungi alla classe Atleta un metodo per assegnare all'atleta il nome della squadra dove gioca.
+#es3 = Aggiungi alla classe Atleta un metodo chiamato effettua_visita che ponga l'attributo visitaMedica uguale a True.
+#es4 = Aggiungi alla classe Atleta un metodo per visualizzare i dati del giocatore.
+
+
 class Atleta:
     def __init__(self, nome, altezza, sport, età,squadra = 0, visitaMedica = False):
         self.nome = nome
