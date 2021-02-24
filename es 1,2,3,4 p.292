@@ -1,0 +1,20 @@
+class Atleta:
+    def __init__(self, nome, altezza, sport, età,squadra = 0, visitaMedica = False):
+        self.nome = nome
+        self.sport = sport
+        self.altezza = altezza
+        self.età = età
+        
+        self.visitaMedica = visitaMedica
+    def squadra_(self):
+        squadra = input("inserisci la squadra in cui gioca l'atleta")
+        self.squadra = squadra
+    def effettua_visita(self):
+        self.visitaMedica = True
+    def visualizza_dati(self):
+        print("Ciao, sono un atleta, il mio nome è", self.nome, "sono alto", self.altezza, "metri, pratico", self.sport, "la mia squadra è", self.squadra, "e ho effettuato la visita medica")
+
+atleta = Atleta("Giacomo", 1.80, "calcio", 25)
+atleta.squadra_()
+atleta.effettua_visita()
+atleta.visualizza_dati()
