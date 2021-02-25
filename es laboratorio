@@ -1,0 +1,113 @@
+from spalla import Verifica
+
+#Verifica.firma("Alessandro Vezzosi")
+
+#Verifica.stampa_esercizi()
+#es = Verifica.inizia_esercizio(1)
+#print()
+#print(es.dati)
+
+
+
+def es1():
+    es=Verifica.inizia_esercizio(1)
+    risposta = es.dati
+    es.consegna(risposta.lower())
+
+def es2():
+    es=Verifica.inizia_esercizio(2)
+    numero = es.dati
+    es.consegna(numero*numero)
+
+def es3():
+    es=Verifica.inizia_esercizio(3)
+    dic = es.dati
+    es.consegna(dic.get("cognome"))
+
+def es4():
+    es=Verifica.inizia_esercizio(4)
+    lista = es.dati
+    es.consegna(len(lista))
+
+def es5():
+    es=Verifica.inizia_esercizio(5)
+    lista = es.dati
+    lista2 = []
+    for parola in lista:
+        lista2.append(parola.upper())
+    es.consegna(lista2)
+
+def es6():
+    es=Verifica.inizia_esercizio(6)
+    lista = es.dati
+    somma = 0 
+    for n in lista:
+        somma += n 
+    es.consegna(somma)
+
+def es7():
+    es=Verifica.inizia_esercizio(7)
+    lista = es.dati
+    somma = 0 
+    for n in lista:
+        if n > 5:
+            somma += n
+        else:
+            somma += 0
+    es.consegna(somma)
+
+def es8():
+    es=Verifica.inizia_esercizio(8)
+    lista = es.dati
+    somma = 0 
+    num = 0
+    num1 = len(lista) % 2 
+    if num1 != 0 :
+        lista.pop()
+    else:
+        pass
+    while True:
+        somma += lista[-1]
+        lista.pop
+        lista.pop
+        if len(lista) == 0:
+            break
+        else:
+            pass
+    es.consegna(somma)
+
+def es_9():
+    es = Verifica.inizia_esercizio(9)
+    lista = es.dati
+    lista2 = []
+    for num in lista:
+        resto = num%2
+        if resto != 0:
+            lista2.append(num)
+        else:
+            pass
+    somma = sum(lista2)
+    es.consegna(somma)
+
+def es_10():
+    es =  Verifica.inizia_esercizio(10)
+    lista = es.dati
+    lista.sort()
+    es.consegna(lista)
+
+def es_11():
+    es = Verifica.inizia_esercizio(11)
+    lista = es.dati
+    for i in range(len(lista)):
+        lista[i] = lista[i].lower()
+    lista.sort()
+    es.consegna(lista)
+
+def es_12():
+    es = Verifica.inizia_esercizio(12)
+    lista = es.dati
+    for i in range(len(lista)):
+        lista[i] -= 1
+    es.consegna(lista)
+es_12()
+
