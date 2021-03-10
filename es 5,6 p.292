@@ -1,0 +1,17 @@
+#es5: Elenca proprietà e metodi della classe Prodotto
+#es6: Definisci il metodo assegna_prezzo della classe Prodotto
+
+class Prodotto:
+    def __init__(self, categoria,nome, marca,prezzo = 0):
+        self.categoria = categoria
+        self.nome = nome
+        self.marca = marca
+        
+    def assegna_prezzo(self,costo):
+        self.prezzo = costo
+    def informazioni(self):
+        print("il prodotto rientra nella seguente categoria :", self.categoria, ", ha il seguente nome:", self.nome, "ed ha il seguente prezzo:", self.prezzo, "$")
+    
+prodotto = Prodotto("automobili", "Yaris", "Fiat")
+prodotto.assegna_prezzo(15000)
+prodotto.informazioni()
