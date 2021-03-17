@@ -1,0 +1,57 @@
+class PadreDiArtù:
+    def __init__(self,x,y):
+        self.x = x
+        self.y = y
+
+    def movimenti(self, direzione):
+        if direzione == "su":
+            self.y -= 1
+        elif direzione == "giù":
+            self.y += 1
+        elif direzione == "destra":
+            self.x += 1
+        elif direzione == "sinistra":
+            self.x -= 1
+
+
+class Artù(PadreDiArtù):
+    def __init__(self, nome, danno, x,y):
+        super().__init__(x,y)
+        self.nome = nome
+        self.danno = danno
+        self.hp = 10
+    
+    def info(self):
+        print("sono", self.nome, "i miei punti vita attuali sono:", self.hp)
+
+    def attacco(self, avversario):
+        avversario.hp -= self.danno
+        
+        
+        if self.hp > 0:
+            print(self.nome, "sferra un attacco contro:", avversario.nome)
+        elif self.hp <= 0:
+            print( self.nome ,"in fin di vita attacca ma va a vuoto")
+        elif avversario.hp <= 0:
+            print(avversario.nome, "è morto")
+            
+
+            
+Mostro1sr = PadreDiArtù(8,6)
+Mostro1sr.movimenti("su")
+
+mostro1 = Artù("lupo del campo", 5, 11, 5)
+mostro1.info()
+
+mostro2 = Artù("Artù", 1, 34, 5)
+mostro2.info()
+
+mostro1.attacco(mostro2)
+mostro2.attacco(mostro1)
+mostro1.attacco(mostro2)
+mostro2.attacco(mostro1)
+
+if mostro2.hp <= 0:
+    print("ora artù ha un occhio solo e torna a casa tutto insanguinato")
+else:
+    print("artù continua a combattere e perderà anche l'altro occhio")
