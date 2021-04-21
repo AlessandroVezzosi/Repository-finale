@@ -1,0 +1,41 @@
+def es_1():
+    es = Verifica.inizia_esercizio(1)
+    lista = es.dati
+    numero = lista[0]
+    somma = 0
+    for i in lista:
+        if i == numero:
+            pass
+        elif i > numero:
+            somma = somma + i
+        else:
+            pass
+
+
+    es.consegna(somma)
+
+def es_2():
+    es = Verifica.inizia_esercizio(2)
+    lista = es.dati
+    somma = 0
+    for i in lista:
+        cont = len(i)
+        if cont > 4:
+            somma = somma + 1
+        else:
+            pass
+    es.consegna(somma)
+
+def es_3():
+    es = Verifica.inizia_esercizio(3)
+    lista = es.dati
+    lista2 = []
+    for i in lista:
+        resto = i % 2
+        if resto == 0:
+            pass
+        elif resto != 0:
+            if i > 1:
+                lista2.append(i)
+
+    es.consegna(lista2)
